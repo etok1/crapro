@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Open+Sans:wght@400;500&family=Rubik:wght@300;400&display=swap");
+* {
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #0d0d2b;
+}
+
+.header__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  margin-top: 55px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header__logo h1 {
+  font-size: 18px;
+}
+
+.header__nav {
+  margin-left: 35%;
+}
+
+.header__nav-link {
+  margin-right: 35px;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  position: relative;
+}
+
+.header__nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #3671e9;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+.header__nav-link:hover::before {
+  width: 100%;
+}
+
+.header__nav-link:last-child {
+  margin-right: 0;
+}
+
+.header__login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.header__login-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header__login-stick {
+  width: 1px;
+  height: 25px;
+  background-color: gray;
+}
+
+.header__login button {
+  padding: 14px 32px;
+  background-color: #3671e9;
+  color: #fff;
+  border-radius: 32px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.header__login-link {
+  transition: color 0.5s ease-in-out;
+}
+
+.header__login-link:hover {
+  color: #3671e9;
+}
+
+.header__login button:hover {
+  background-color: #0055ff;
+}
+/* main */
+.main__container {
+  max-width: 1440px;
+  margin: 100px auto;
+}
+
+.main__trial {
+  width: 100%;
+  font-family: "Rubik", sans-serif;
+  margin-left: 9%;
+}
+
+.main__trial-sale {
+  width: 365px;
+  color: #fff;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  height: 40px;
+  background-color: #ffffff1a;
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.main__trial-sale-save {
+  background-color: #fff;
+  border-radius: 32px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  padding: 8px 10px;
+  margin-left: 5px;
+  font-weight: bold;
+  color: #000;
+}
+
+.main__trial h1 {
+  font-size: 64px;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 25px;
+}
